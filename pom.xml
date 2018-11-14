@@ -17,7 +17,7 @@
         <log4j.version>2.7</log4j.version>
         <junit.version>4.12</junit.version>
         <driver.version>5.1.40</driver.version>
-        <sharding-sphere.version>3.0.0.M2</sharding-sphere.version>
+        <sharding-sphere.version>3.0.0.M1</sharding-sphere.version>
     </properties>
 
     <dependencies>
@@ -114,6 +114,13 @@
         </dependency>
         <!--json end-->
 
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.15</version>
+        </dependency>
+
         <!--mybatis start-->
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -155,7 +162,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.40</version>
+            <version>8.0.13</version>
         </dependency>
         <!--数据库驱动end-->
         

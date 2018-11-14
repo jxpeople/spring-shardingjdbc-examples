@@ -45,7 +45,8 @@
             <sharding:table-rules>
                 <sharding:table-rule logic-table="t_order" 
                 	actual-data-nodes="${sharding.jdbc.datasource.actual.data.nodes.order}"
-                	 database-strategy-ref="databaseShardingStrategy" table-strategy-ref="tableShardingStrategy"
+                	 database-strategy-ref="databaseShardingStrategy"
+                     table-strategy-ref="tableShardingStrategy"
                 	  generate-key-column-name="order_id" />
                 	  
                 <sharding:table-rule logic-table="t_order_item" 

@@ -19,6 +19,8 @@ package com.sharding.demo.dao;
 
 import com.sharding.demo.bean.Order;
 
+import java.util.List;
+
 public interface OrderRepository {
     
     void createIfNotExistsTable();
@@ -26,6 +28,8 @@ public interface OrderRepository {
     void truncateTable();
     
     Long insert(Order model);
+
+    List<Order> selectByUserId(Integer userId);
     
     void delete(Long orderId);
     
